@@ -1,0 +1,3 @@
+## SEO Folder
+
+In this folder you can create SEO files like: google-analytics configuration and ...
