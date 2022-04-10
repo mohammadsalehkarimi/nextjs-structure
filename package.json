@@ -6,12 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format-codes": "prettier --write . --ignore-unknown"
   },
   "dependencies": {
     "next": "12.1.4",
+    "next-connect": "^0.12.2",
+    "prettier": "^2.6.2",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-query": "^3.34.19",
+    "react-redux": "^7.2.8",
+    "redux": "^4.1.2",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@types/node": "17.0.23",

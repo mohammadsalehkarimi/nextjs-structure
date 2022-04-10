@@ -1,13 +1,9 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+import server from "../../server/configs"
+import { helloController } from "../../server/controllers"
+import { helloMiddleware } from "../../server/middlewares"
 
-type Data = {
-  name: string
-}
+const connections = server
+  .get("/api/hello", helloController.sayHello)
+  .post("/api/hello", helloMiddleware.checkPassword, helloController.getName)
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
-}
+export default connections
