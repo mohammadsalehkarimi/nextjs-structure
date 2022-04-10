@@ -1,7 +1,8 @@
 {
   "name": "nextjs-structure",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "Mohammadsaleh Karimi",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
